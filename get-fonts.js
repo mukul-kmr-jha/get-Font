@@ -1,0 +1,1 @@
+document.querySelectorAll('p').forEach(e => e.style.cssText="color:green;");

@@ -1,0 +1,27 @@
+{
+    
+    "manifest_version":2,
+    "name":"get-Fonts",
+    "version":"1.0",
+    
+    
+    "description":"Tells the Font Family of the selected text. It also provides options to replace the selected font with some other font family and if you are a Web-Developer then it lets you link & import that font in your HTML/CSS file",
+    
+    "icons":{
+        "16":"icons/get-fonts_16.png",
+        "48":"icons/get-fonts_48.png",
+        "64":"icons/get-fonts_64.png"   
+    },
+    "content_scripts":[
+        {
+            "matches":["*://*/*"],
+            "js":["get-fonts.js"] 
+        }
+    ],
+    "applications": {
+      "gecko": {
+         "id": "mycoolextension@mycooleeextension.com"
+      }
+   }
+    
+}
